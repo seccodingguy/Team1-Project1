@@ -1,6 +1,8 @@
 # Importing necessary libraries
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 import os
 from tqdm import tqdm
 
@@ -24,7 +26,7 @@ def load_and_extract_data(path_to_csv):
     return combined
 
 def slice_by_city(city_name, city_column_name, data_frame):
-    sliced_df = data_frame[data_frame[city_column_name] == city_column_name]
+    sliced_df = data_frame[data_frame[city_column_name] == city_name]
     return sliced_df
 
 def slice_by_date(start_date, end_date, date_column_name, data_frame):
@@ -32,6 +34,15 @@ def slice_by_date(start_date, end_date, date_column_name, data_frame):
     sliced_df = data_frame[(data_frame.index >= start_date) & (data_frame.index <= end_date)]
     sliced_df.reset_index()
     return sliced_df
+
+def print_and_plot_corr_matrix(data_frame,columns):
+    correlation_matrix = data_frame[columns].corr()
+    print(correlation_matrix)
+    # Plot the correlation matrix as a heatmap
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
+    plt.title("Correlation Matrix Heatmap")
+    plt.show()
     
 
 # Load the CSV file into a Pandas DataFrame
@@ -76,18 +87,23 @@ categorical_columns = df.select_dtypes(include=['object']).columns
 for col in categorical_columns:
     print(f"{col}: {df[col].unique()}")
 
+matrix_names = ['Date','Daily AQI Value', 'Daily Mean PM2.5 Concentration']
+
 # Check for correlations between numerical columns using Numpy
 print("\nCorrelation Matrix:")
-correlation_matrix = df[['Date','Daily AQI Value', 'Daily Mean PM2.5 Concentration']].corr()
-print(correlation_matrix)
+print_and_plot_corr_matrix(df,matrix_names)
+#correlation_matrix = df[['Date','Daily AQI Value', 'Daily Mean PM2.5 Concentration']].corr()
+#print(correlation_matrix)
 
-city_names = ["Los Angeles-Long Beach-Anaheim, CA","Tallahassee, FL","Juneau, AK"]
+city_names = ["Los Angeles-Long Beach-Anaheim, CA","Tallahassee, FL","Juneau, AK","St. Louis, MO-IL"]
 city_column = "CBSA Name"
 
-df_slice = slice_by_city(city_names[0],city_column, df)
-print(f"\nCorrelation Matrix for {city_names[0]}:")
-correlation_matrix = df_slice[['Date','Daily AQI Value', 'Daily Mean PM2.5 Concentration']].corr()
-print(correlation_matrix)
+for city_name in city_names:
+    df_slice = slice_by_city(city_name,city_column, df)
+    print(f"\nCorrelation Matrix for {city_name}:")
+    print_and_plot_corr_matrix(df_slice,matrix_names)
+    #correlation_matrix = df_slice[['Date','Daily AQI Value', 'Daily Mean PM2.5 Concentration']].corr()
+    #print(correlation_matrix)
 
 # Check for outliers using interquartile range (IQR)
 print("\nChecking for outliers:")
