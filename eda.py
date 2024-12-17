@@ -25,6 +25,79 @@ def load_and_extract_data(path_to_csv):
 
     return combined
 
+def clean_data(df):
+    """
+    Clean the data: handle missing values and duplicates.
+    """
+    print("\n--- Cleaning Data ---")
+    
+    # Drop duplicate rows
+    initial_shape = df.shape
+    df = df.drop_duplicates()
+    print(f"Removed duplicates: {initial_shape[0] - df.shape[0]} rows dropped.")
+    
+    # Fill missing numeric columns with median
+    numeric_cols = df.select_dtypes(include=[np.number]).columns
+    for col in numeric_cols:
+        df[col].fillna(df[col].median(), inplace=True)
+    
+    # Fill missing categorical columns with mode
+    categorical_cols = df.select_dtypes(include=['object']).columns
+    for col in categorical_cols:
+        df[col].fillna(df[col].mode()[0], inplace=True)
+
+    print("Missing values handled.")
+    return df
+
+def visualize_outliers(df, y_value_column):
+    # Boxplot
+    sns.boxplot(data=df, y=y_value_column)
+    plt.title("Boxplot for Outlier Detection")
+    plt.show()
+
+def remove_outliers(df, column_name):
+    # Calculate Q1 (25th percentile) and Q3 (75th percentile)
+    Q1 = df[column_name].quantile(0.25)
+    Q3 = df[column_name].quantile(0.75)
+    IQR = Q3 - Q1
+
+    # Define the lower and upper bounds
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+
+    # Find outliers
+    outliers = df[(df[column_name] < lower_bound) | (df[column_name] > upper_bound)]
+
+    print("Outliers:")
+    print(outliers)
+
+    # Remove outliers
+    df_cleaned = df[(df[column_name] >= lower_bound) & (df[column_name] <= upper_bound)]
+
+    return df_cleaned
+
+def visualize_data(df):
+    """
+    Visualize the data: distributions and correlations.
+    """
+    print("\n--- Visualizing Data ---")
+    plt.figure(figsize=(10, 6))
+    
+    # Pairplot for numerical columns
+    print("Generating pairplot...")
+    numeric_cols = df.select_dtypes(include=[np.number]).columns
+    if len(numeric_cols) > 1:
+        sns.pairplot(df[numeric_cols])
+        plt.show()
+    
+    # Heatmap for correlation
+    print("Generating heatmap...")
+    correlation_matrix = df.corr()
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
+    plt.title("Correlation Matrix Heatmap")
+    plt.show()
+
 def slice_by_city(city_name, city_column_name, data_frame):
     sliced_df = data_frame[data_frame[city_column_name] == city_name]
     return sliced_df
@@ -52,6 +125,10 @@ def print_and_plot_corr_matrix(data_frame,columns):
 df = load_and_extract_data("data")
 df = df[['Date', 'CBSA Name','Local Site Name', 'Daily AQI Value', 'Daily Mean PM2.5 Concentration']].copy()
 df['Date'] = pd.to_datetime(df['Date'])
+
+df = clean_data(df)
+visualize_outliers(df,'Daily AQI Value')
+visualize_outliers(df,'Daily Mean PM2.5 Concentration')
 
 # Display the first few rows of the dataset
 print("First 5 rows of the dataset:")
