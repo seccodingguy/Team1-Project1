@@ -69,3 +69,13 @@ This project is licensed under the MIT License. Feel free to use and modify it a
 
 ---
 For questions or feedback, please reach out via GitHub Issues.
+
+## Screenshots 
+
+![alt text](screenshots/image-1)
+![alt text](screenshots/image-2)
+![alt text](screenshots/image-3)
+![alt text](screenshots/image-4)
+![alt text](screenshots/image-5)
+![alt text](screenshots/image-6)
+![alt text](screenshots/image-7)
