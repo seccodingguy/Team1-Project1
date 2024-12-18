@@ -72,10 +72,10 @@ For questions or feedback, please reach out via GitHub Issues.
 
 ## Screenshots 
 
-![alt text](screenshots/image-1.png)
-![alt text](screenshots/image-2.png)
-![alt text](screenshots/image-3.png)
-![alt text](screenshots/image-4.png)
-![alt text](screenshots/image-5.png)
-![alt text](screenshots/image-6.png)
-![alt text](screenshots/image-7.png)
+![LA Cleaned Data](screenshots/image-1.png)
+![La Line Graph](screenshots/image-2.png)
+![Juneau](screenshots/image-3.png)
+![Juneau](screenshots/image-4.png)
+![ST Louis](screenshots/image-5.png)
+![St Louis](screenshots/image-6.png)
+![All three Cities](screenshots/image-7.png)
