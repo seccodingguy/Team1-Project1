@@ -2,6 +2,22 @@
 # Project Overview
 This project focuses on performing **Exploratory Data Analysis (EDA)** on multiple datasets. The notebook includes functionality for loading, cleaning, analyzing, and visualizing data using Python libraries such as `pandas`, `matplotlib`, `seaborn`, and `numpy`. The reusable functions enable efficient handling of data cleaning, outlier detection, and correlation analysis.
 
+The analysis is used to answer the hypothesis: The overall Air Quality increased due to less commerce, driving, etc. during the onset of the COVID pandemic.
+
+The data was sourced from the EPA Air Quality (https://www.epa.gov/air-quality) site to obtain monthly AQI data from 2019-2021 for the following three US cities, chosen with varying population levels:
+<ul>
+<li>Los Angeles, California (Pop. 3.8 Million)</li>
+<li>St, Louis, Missouri (Pop 280,000)</li>
+<li>Jeaneu, Alaska (Pop 31,500)</li>
+</ul>
+
+By sourcing cities with different population levels and geographical regions, we hope to get a more definitive picture of the data
+					
+How did the AQI change in each city from 2019-2021?
+6 months before pandemic declaration (March 11th, 2020)
+6 months during pandemic declaration
+6-12 months after pandemic exploration
+
 ## Features
 - **Load and Combine Data**: Reads multiple CSV files from a specified directory and combines them into a single DataFrame.
 - **Data Cleaning**: Handles missing values, duplicates, and outliers.
