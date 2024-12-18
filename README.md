@@ -12,11 +12,13 @@ The data was sourced from the EPA Air Quality (https://www.epa.gov/air-quality) 
 </ul>
 
 By sourcing cities with different population levels and geographical regions, we hope to get a more definitive picture of the data
-					
-How did the AQI change in each city from 2019-2021?
-6 months before pandemic declaration (March 11th, 2020)
-6 months during pandemic declaration
-6-12 months after pandemic exploration
+from the analysis that answers the following:
+<ul>
+<li>How did the AQI change in each city from 2019-2021?</li>
+<li>6 months before pandemic declaration (March 11th, 2020)</li>
+<li>6 months during pandemic declaration</li>
+<li>6-12 months after pandemic exploration</li>
+</ul>
 
 ## Features
 - **Load and Combine Data**: Reads multiple CSV files from a specified directory and combines them into a single DataFrame.
