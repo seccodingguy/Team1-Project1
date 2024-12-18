@@ -76,6 +76,6 @@ For questions or feedback, please reach out via GitHub Issues.
 ![La Line Graph](screenshots/image-2.png)
 ![Juneau](screenshots/image-3.png)
 ![Juneau](screenshots/image-4.png)
-![ST Louis](screenshots/image-5.png)
+![St Louis](screenshots/image-5.png)
 ![St Louis](screenshots/image-6.png)
 ![All three Cities](screenshots/image-7.png)
