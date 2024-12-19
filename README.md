@@ -74,10 +74,21 @@ The project enables users to:
 3. Generate insights using visualizations to understand relationships between variables.
 
 # Project One Team One Summary of findings
-![Project One Summary Findings](Project One Team One Summary of findings .pdf)
+![Project One Summary Findings](./Project%20One%20Team%20One%20Summary%20of%20findings%20.pdf) 
+ # See screenshots below for reference:
+
+## Screenshots 
+
+![LA Cleaned Data](screenshots/image-1.png)
+![La Line Graph](screenshots/image-2.png)
+![Juneau](screenshots/image-3.png)
+![St Louis](screenshots/image-5.png)
+![Juneau](screenshots/image-4.png)
+![Juneau](screenshots/image-6.png)
+![All three Cities](screenshots/image-7.png)
 
 # AQI Presentation Team 1:
-![AQI Presentation](AQI  Presentation_ Team 1.pdf)
+![AQI Presentation](./AQI%20%20Presentation_%20Team%201.pdf)
 
 ## Directory Structure
 ```
@@ -94,15 +105,6 @@ This project is licensed under the MIT License. Feel free to use and modify it a
 ---
 For questions or feedback, please reach out via GitHub Issues.
 
-## Screenshots 
-
-![LA Cleaned Data](screenshots/image-1.png)
-![La Line Graph](screenshots/image-2.png)
-![Juneau](screenshots/image-3.png)
-![St Louis](screenshots/image-5.png)
-![Juneau](screenshots/image-4.png)
-![Juneau](screenshots/image-6.png)
-![All three Cities](screenshots/image-7.png)
 
 # Contributors 
-Mark Wireman, John Degarmo, Bryan Paul, Josh Rahmanm, Lauren Belling, George Rac
+Mark Wireman, John Degarmo, Bryan Paul, Josh Rahman, Lauren Belling, George Racolta
