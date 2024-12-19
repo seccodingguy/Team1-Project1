@@ -97,6 +97,20 @@ project-root/
 ├── Project 1.ipynb     # Jupyter Notebook
 ├── README.md           # This file
 └── example_outputs/    # Folder for example images
+
+## Citations ##
+
+[text](https://bazallergy.com/understand-the-basics-of-the-air-quality-index/)
+
+[text](https://www.healthpartners.com/blog/air-quality-index/#:~:text=Poor%20air%20quality%20is%20polluted,of%20smoke%2C%20soot%20and%20smog.)
+
+[text](https://edition.cnn.com/2020/04/07/us/los-angeles-pollution-clean-air-coronavirus-trnd/index.html)
+
+[text](https://www.latimes.com/la-fi-port-container-ships-pg-photogallery.html)
+
+[text](https://chatgpt.com/c/6760e075-5050-800e-a21a-b29dbc1602d0)
+
+[text](https://chatgpt.com/c/67634854-c6f8-800e-aa63-0d7c2b42f5ca)
 ```
 
 ## License
