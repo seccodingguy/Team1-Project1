@@ -98,6 +98,8 @@ project-root/
 ├── README.md           # This file
 └── example_outputs/    # Folder for example images
 
+
+```
 ## Citations ##
 
 [text](https://bazallergy.com/understand-the-basics-of-the-air-quality-index/)
@@ -111,7 +113,6 @@ project-root/
 [text](https://chatgpt.com/c/6760e075-5050-800e-a21a-b29dbc1602d0)
 
 [text](https://chatgpt.com/c/67634854-c6f8-800e-aa63-0d7c2b42f5ca)
-```
 
 ## License
 This project is licensed under the MIT License. Feel free to use and modify it as needed.
