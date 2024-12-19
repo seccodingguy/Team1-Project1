@@ -97,3 +97,7 @@ For questions or feedback, please reach out via GitHub Issues.
 ![Juneau](screenshots/image-4.png)
 ![Juneau](screenshots/image-6.png)
 ![All three Cities](screenshots/image-7.png)
+
+Summary: The analysis does show a slight increase in AQI during the initial 6 month period of the COVID-19 pandemic, however, the correlation of the pandemic to AQI was not as obvious as we originally hypothesised, with and without the outliers. This may be do to many non-COVID related factors such as weather patterns, seasonal changes, wildfires, temperature, and bodies of water. More analysis warrants further investigation to better understand the periodicity of the AQI values for the 3 year period. 
+### contributers ###
+Mark Wireman John DeGarmo Bryan Paul Josh Rahman Lauren Belling
