@@ -74,10 +74,10 @@ The project enables users to:
 3. Generate insights using visualizations to understand relationships between variables.
 
 # Project One Team One Summary of findings
-![Project One Summary Findings](Project One Team One Summary of findings .pdf)
+![Project One Summary Findings](./Project%20One%20Team%20One%20Summary%20of%20findings%20.pdf)
 
 # AQI Presentation Team 1:
-![AQI Presentation](AQI  Presentation_ Team 1.pdf)
+![AQI Presentation](./AQI%20%20Presentation_%20Team%201.pdf)
 
 ## Directory Structure
 ```
