@@ -76,7 +76,7 @@ The project enables users to:
 # Project One Team One Summary of findings
 ![Project One Summary Findings](./Project%20One%20Team%20One%20Summary%20of%20findings%20.pdf) 
  # See screenshots below for reference:
- 
+
 ## Screenshots 
 
 ![LA Cleaned Data](screenshots/image-1.png)
@@ -107,4 +107,4 @@ For questions or feedback, please reach out via GitHub Issues.
 
 
 # Contributors 
-Mark Wireman, John Degarmo, Bryan Paul, Josh Rahmanm, Lauren Belling, George Rac
+Mark Wireman, John Degarmo, Bryan Paul, Josh Rahman, Lauren Belling, George Racolta
