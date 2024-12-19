@@ -73,6 +73,12 @@ The project enables users to:
 2. Identify and handle data quality issues such as missing values and outliers.
 3. Generate insights using visualizations to understand relationships between variables.
 
+# Project One Team One Summary of findings
+![Project One Summary Findings](Project One Team One Summary of findings .pdf)
+
+# AQI Presentation Team 1:
+![AQI Presentation](AQI  Presentation_ Team 1.pdf)
+
 ## Directory Structure
 ```
 project-root/
@@ -97,3 +103,6 @@ For questions or feedback, please reach out via GitHub Issues.
 ![Juneau](screenshots/image-4.png)
 ![Juneau](screenshots/image-6.png)
 ![All three Cities](screenshots/image-7.png)
+
+# Contributors 
+Mark Wireman, John Degarmo, Bryan Paul, Josh Rahmanm, Lauren Belling, George Rac
